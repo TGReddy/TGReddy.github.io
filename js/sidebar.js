@@ -1,7 +1,5 @@
-$(document).ready(function () {
-    $(".transFix").each(function (index, element) {
-        setTimeout(function () { $(element).removeClass("transFix") }, 4);
-    });
+$(window).load(function() {
+  $("body").removeClass("transFix");
 });
 
 function loopDropdowns() {
