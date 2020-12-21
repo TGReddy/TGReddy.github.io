@@ -27,7 +27,6 @@
   width: 100%;
 }
 
-.sidebarMenuElement a,
 .sidebarMenuElement button {
   background-color: #00000000;
 
@@ -41,7 +40,6 @@
 }
 
 .sidebarMenuElement:hover,
-.sidebarMenuElement:hover a,
 .sidebarMenuElement:hover button {
   color: #bbb;
 
@@ -57,14 +55,14 @@
   transition: all .2s;
 }
 
-.sidebarDropdown .sidebarMenuElement a {
+.sidebarDropdown .sidebarMenuElement button {
   color: #666;
 
   width: 100%;
 }
 
 .sidebarDropdown .sidebarMenuElement:hover,
-.sidebarDropdown .sidebarMenuElement:hover a {
+.sidebarDropdown .sidebarMenuElement:hover button {
   color: #999;
 
   cursor: pointer;
