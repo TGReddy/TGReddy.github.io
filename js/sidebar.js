@@ -1,3 +1,10 @@
+function setActive() {
+  for (i = 0; i < document.getElementsByClassName('sidebarMenuElement').length; i++) {
+    document.getElementsByClassName('sidebarMenuElement')[i].classList.remove("sidebarActive");
+  }
+  document.getElementById("sidebarLink" + sessionStorage.getItem('page')).classList.add("sidebarActive");
+}
+
 function loopDropdowns() {
   divs = document.getElementsByClassName('sidebarDropdown');
   for (var i = 0; i < divs.length; i++) {
@@ -17,9 +24,10 @@ function toggleDropdown(id) {
   loopDropdowns();
 }
 
-function setActive() {
-  for (i = 0; i < document.getElementsByClassName('sidebarMenuElement').length; i++) {
-    document.getElementsByClassName('sidebarMenuElement')[i].classList.remove("sidebarActive");
-  }
-  document.getElementById("sidebarLink" + sessionStorage.getItem('page')).classList.add("sidebarActive");
+sessionStorage.setItem('page', 'Home');
+setActive();
+
+for (var i = 0; i < divs.length; i++) {
+  sessionStorage.setItem(divs[i].id, '0');
+  divs[i].style.height = sessionStorage.getItem(divs[i].id);
 }
