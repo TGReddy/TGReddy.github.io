@@ -76,3 +76,10 @@
 .sidebarActive button {
   color: #eee;
 }
+
+.sidebarActive .sidebarMenuElement:hover,
+.sidebarActive .sidebarMenuElement:hover button {
+  color: #eee;
+
+  cursor: pointer;
+}
