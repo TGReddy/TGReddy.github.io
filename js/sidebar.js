@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".transFix").each(function (index, element) {
-        setTimeout(function () { $(element).removeClass("transFix") }, 1);
+        setTimeout(function () { $(element).removeClass("transFix") }, 4);
     });
 });
 
