@@ -1,0 +1,13 @@
+#contentContainer::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+#contentContainer::-webkit-scrollbar-track {
+  background-color: #999;
+
+  box-shadow: inset 2px 2px 4px #666;
+}
+
+#contentContainer::-webkit-scrollbar-thumb {
+  background-color: #444444ff;
+}

@@ -1,0 +1,76 @@
+#sidebarContainer {
+  background-color: #222;
+
+  width: 8rem;
+  height: 100%;
+
+  box-shadow: 2px 0px 4px #111;
+
+  position: fixed;
+  z-index: 2;
+}
+
+#sidebarMenuContainer {
+  height: auto;
+
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebarMenuElement {
+  text-align: center;
+
+  height: 2rem;
+  width: 100%;
+}
+
+.sidebarMenuElement a,
+.sidebarMenuElement button {
+  background-color: #00000000;
+
+  color: #999;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  outline: none;
+  border: none;
+}
+
+.sidebarMenuElement:hover,
+.sidebarMenuElement:hover a,
+.sidebarMenuElement:hover button {
+  color: #bbb;
+
+  cursor: pointer;
+}
+
+.sidebarDropdown {
+  width: 100%;
+  height: 0;
+
+  overflow: hidden;
+
+  transition: all .2s;
+}
+
+.sidebarDropdown .sidebarMenuElement a {
+  color: #666;
+
+  width: 100%;
+}
+
+.sidebarDropdown .sidebarMenuElement:hover,
+.sidebarDropdown .sidebarMenuElement:hover a {
+  color: #999;
+
+  cursor: pointer;
+}
+
+.sidebarWrapper {
+  width: 100%;
+  height: auto;
+}
