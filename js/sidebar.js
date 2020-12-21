@@ -21,5 +21,5 @@ function setActive() {
   for (i = 0; i < document.getElementsByClassName('sidebarMenuElement').length; i++) {
     document.getElementsByClassName('sidebarMenuElement')[i].classList.remove("sidebarActive");
   }
-  document.getElementById("sidebarLink" + sessionStorage.getItem(page)).classList.add("sidebarActive");
+  document.getElementById("sidebarLink" + sessionStorage.getItem('page')).classList.add("sidebarActive");
 }
