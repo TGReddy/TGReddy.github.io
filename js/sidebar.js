@@ -24,7 +24,7 @@ function toggleDropdown(id) {
   loopDropdowns();
 }
 
-$(window).load(function () {
+$(window).on('load', function () {
   sessionStorage.setItem('page', 'Home');
   setActive();
 
