@@ -1,11 +1,3 @@
-$(window).on('load', function() {
-  divs = document.getElementsByClassName('sidebarDropdown');
-  document.getElementsByClassName('sidebarDropdown').offsetHeight
-  for (i = 0; i < divs.length; i++) {
-    document.getElementsByClassName('sidebarDropdown')[i].classList.remove("transFix");
-  }
-});
-
 function loopDropdowns() {
   divs = document.getElementsByClassName('sidebarDropdown');
   for (var i = 0; i < divs.length; i++) {
