@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TGR's Site</title>
-
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
-    <script src="js/sidebar.js"></script>
+{% include head.html %}
   </head>
   <body onload="loopDropdowns();">
     <div id="totalContainer">
-	   {% include sidebar.html %}
+{% include sidebar.html %}
       <div id="mainContainer">
         <div id="headerContainer">
           <h2>Header</h2>
@@ -26,18 +15,7 @@
             <p>Content</p>
             <div class="d1"></div>
           </div>
-          <div id="footerContainer">
-            <p> © Thomas Reddy </p>
-            <div id="cubes">
-              <div class="cube t1"></div>
-              <div class="cube t2"></div>
-              <div class="cube t3"></div>
-              <div class="cube t4"></div>
-              <div class="cube t5"></div>
-              <div class="cube t6"></div>
-              <div class="cube t7"></div>
-            </div>
-          </div>
+{% include footer.html %}
         </div>
       </div>
     </div>
