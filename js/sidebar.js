@@ -1,4 +1,5 @@
 $(window).load(function() {
+  document.getElementsByClassName('sidebarDropdown').offsetHeight
   document.getElementsByClassName('sidebarDropdown').classList.remove("transFix");
 });
 
