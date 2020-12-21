@@ -28,6 +28,7 @@ $(window).on('load', function () {
   sessionStorage.setItem('page', 'Home');
   setActive();
 
+  divs = document.getElementsByClassName('sidebarDropdown');
   for (var i = 0; i < divs.length; i++) {
     sessionStorage.setItem(divs[i].id, '0');
     divs[i].style.height = sessionStorage.getItem(divs[i].id);
