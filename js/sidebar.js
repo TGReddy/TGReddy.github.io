@@ -24,10 +24,12 @@ function toggleDropdown(id) {
   loopDropdowns();
 }
 
-sessionStorage.setItem('page', 'Home');
-setActive();
+$(window).load(function () {
+  sessionStorage.setItem('page', 'Home');
+  setActive();
 
-for (var i = 0; i < divs.length; i++) {
-  sessionStorage.setItem(divs[i].id, '0');
-  divs[i].style.height = sessionStorage.getItem(divs[i].id);
-}
+  for (var i = 0; i < divs.length; i++) {
+    sessionStorage.setItem(divs[i].id, '0');
+    divs[i].style.height = sessionStorage.getItem(divs[i].id);
+  }
+});
