@@ -1,13 +1,13 @@
 <div id="sidebarContainer">
   <div id="sidebarMenuContainer">
-    <div class="sidebarMenuElement"><a href="">Home</a></div>
+    <div id="sidebarLinkHome" class="sidebarMenuElement"><button onclick="sessionStorage.setItem(page, 'Home'); location.href='index.html'">Home</button></div>
     <div class="sidebarMenuElement"><button onclick="toggleDropdown('dropdownGoogology')">Googology</button></div>
     <div id="dropdownGoogology" class="sidebarDropdown">
       <div id="dropdownGoogologyWrap" class="sidebarWrapper">
-        <div class="sidebarMenuElement"><a href="">TAN</a></div>
-        <div class="sidebarMenuElement"><a href="">TGRx</a></div>
+        <div id="sidebarLinkTAN" class="sidebarMenuElement"><button onclick="sessionStorage.setItem(page, 'TAN'); location.href='TAN.html'">TAN</button></div>
+        <div id="sidebarLinkTGRx" class="sidebarMenuElement"><button onclick="sessionStorage.setItem(page, 'TGRx'); location.href='TGRx.html'">TGRx</button></div>
       </div>
     </div>
-    <div class="sidebarMenuElement"><a href="">Other</a></div>
+    <div id="sidebarLinkOther" class="sidebarMenuElement"><button onclick="sessionStorage.setItem(page, 'Other'); location.href='Other.html'">Other</button></div>
   </div>
 </div>
