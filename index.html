@@ -16,19 +16,7 @@
   </head>
   <body onload="loopDropdowns();">
     <div id="totalContainer">
-      <div id="sidebarContainer">
-        <div id="sidebarMenuContainer">
-          <div class="sidebarMenuElement"><a href="">Home</a></div>
-          <div class="sidebarMenuElement"><button onclick="toggleDropdown('dropdownGoogology')">Googology</button></div>
-          <div id="dropdownGoogology" class="sidebarDropdown">
-            <div id="dropdownGoogologyWrap" class="sidebarWrapper">
-              <div class="sidebarMenuElement"><a href="">TAN</a></div>
-              <div class="sidebarMenuElement"><a href="">TGRx</a></div>
-            </div>
-          </div>
-          <div class="sidebarMenuElement"><a href="">Other</a></div>
-        </div>
-      </div>
+	   {% include sidebar.html %}
       <div id="mainContainer">
         <div id="headerContainer">
           <h2>Header</h2>
