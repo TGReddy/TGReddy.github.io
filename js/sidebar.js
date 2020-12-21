@@ -1,3 +1,9 @@
+$(document).ready(function () {
+    $(".transFix").each(function (index, element) {
+        setTimeout(function () { $(element).removeClass("transFix") }, 10);
+    });
+});
+
 function loopDropdowns() {
   divs = document.getElementsByClassName('sidebarDropdown');
   for (var i = 0; i < divs.length; i++) {
