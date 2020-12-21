@@ -1,6 +1,4 @@
-$(window).load(function() {
-  $("body").removeClass("transFix");
-});
+
 
 function loopDropdowns() {
   divs = document.getElementsByClassName('sidebarDropdown');
