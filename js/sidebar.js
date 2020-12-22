@@ -25,7 +25,6 @@ function toggleDropdown(id) {
 }
 
 $(window).on('load', function () {
-  sessionStorage.setItem('page', 'Home');
   setActive();
 
   divs = document.getElementsByClassName('sidebarDropdown');
